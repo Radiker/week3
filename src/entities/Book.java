@@ -14,17 +14,17 @@ public class Book {
         this.author = "Автор";
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
-    private String getName() {
+    public String getName() {
         return this.name;
     }
 
-    private void setAuthor(String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
-    private String getAuthor() {
+    public String getAuthor() {
         return this.author;
     }
 

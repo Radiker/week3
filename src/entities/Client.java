@@ -18,4 +18,18 @@ public class Client extends AbstractUser {
         this.banned = banned;
         this.books = books;
     }
+
+    public void setBanned(Boolean banned) {
+        this.banned = banned;
+    }
+    public Boolean getBanned() {
+        return this.banned;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+    public List<Book> getBooks() {
+        return this.books;
+    }
 }

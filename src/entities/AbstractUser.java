@@ -6,31 +6,31 @@ public abstract class AbstractUser {
     private String middleName;
     private String phone;
 
-    private void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    private String getFirstName() {
+    public String getFirstName() {
         return this.firstName;
     }
 
-    private void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    private String getLastName() {
+    public String getLastName() {
         return this.lastName;
     }
 
-    private void setMiddleName(String middleName) {
+    public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
-    private String getMiddleName() {
+    public String getMiddleName() {
         return this.middleName;
     }
 
-    private void setPhone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
-    private String getPhone() {
+    public String getPhone() {
         return this.phone;
     }
 
