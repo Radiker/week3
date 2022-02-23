@@ -13,10 +13,10 @@ public class Client extends AbstractUser {
         this.books = new ArrayList<>();
     }
 
-    public Client(String firstName, String lastName, String middleName, String phone, Boolean banned, List<Book> books){
+    public Client(String firstName, String lastName, String middleName, String phone){
         super(firstName, lastName, middleName, phone);
-        this.banned = banned;
-        this.books = books;
+        this.banned = false;
+        this.books = new ArrayList<>();
     }
 
     public void setBanned(Boolean banned) {

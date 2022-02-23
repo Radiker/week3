@@ -2,16 +2,19 @@ package services.impl;
 
 import entities.Book;
 import entities.Client;
+import services.ClientService;
 
 import java.util.List;
 
-public class ClientServiceImpl {
-    void takeBooks(Client client, List<Book> books){
+public class ClientServiceImpl implements ClientService {
+    @Override
+    public void takeBooks(Client client, List<Book> books){
         List<Book> clientBooks = client.getBooks();
         clientBooks.addAll(books);
         client.setBooks(clientBooks);
     }
-    void returnBooks(Client client, List<Book> books){
+    @Override
+    public void returnBooks(Client client, List<Book> books){
         List<Book> clientBooks = client.getBooks();
         clientBooks.removeAll(books);
         client.setBooks(clientBooks);
